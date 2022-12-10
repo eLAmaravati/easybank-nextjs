@@ -48,7 +48,7 @@ Sebetulnya, tantangan dari Frontend Mentor adalah membuat *landing page* menggun
 
 ### Issue & Approach
 
-Beberapa kendala yang saya hadapi dan pendekatan yang saya lakukan.
+Berikut ini beberapa kendala yang saya hadapi dan pendekatan yang saya lakukan.
 
 #### 1. Header
 
@@ -60,10 +60,40 @@ Ini gambar *background* yang diberikan:
 
 ![Desktop background](public/bg-intro-desktop.svg)
 
+Ini desain yang diharapkan:
+
+![Desktop design](public/desktop-header.jpg)
+
+**Pendekatan**
+
+Karena saya kesulitan mengatur `top` dan `right` di `CSS` untuk `background-image`, saya memotong gambar sesuai dengan desain yang diharapkan jadi tidak perlu mengatur `negative value` untuk `top` dan `right`.
+
+Pendekatan ini sekaligus menghilangkan kendala lain: `overflow`.
+
+*Background image* yang sudah dipotong:
+
+![Background image](public/bg-desktop.webp)
+
+#### 2. ESLint
+
+**Kendala**
+
+Sempat terjadi eror saat di-*deploy* ke Vercel. Itu karena saya menggunakan tag HTML `<image>` alih-alih menggunakan komponen `<Image />`. Alasan saya tidak menggunakan komponen karena tidak ingin menentukan `width` dan `height` di atribut.
+
+**Pendekatan**
+
+Semua *image* diganti menggunakan komponen `<Image />`. Untuk *images* yang ukurannya tidak sesuai atau terdistorsi, diperbaiki di `CSS`.
+
+#### 3. CSS Modules/SCSS
+
+**Kendala**
+
+`NextJS` dilengkapi dengan *built-in* CSS Modules
+
+
 ### What I learned
 
 Ini pertama kalinya saya menggunakan `NextJS` untuk `real project`. 
-
 
 ```css
 .header {
@@ -75,19 +105,15 @@ Ini pertama kalinya saya menggunakan `NextJS` untuk `real project`.
 }
 ```
 
-```js
-const proudOfThisFunc = () => {
-  console.log("🎉");
-};
-```
-
 ### Continued development
 
-
+1. Masih kurang yakin dengan pendekatan yang saya lakukan saat mengatur SCSS. 
+2. Page speed di Lighthouse dan GTMetrix angkanya sempurna.
+  
 
 ### Useful resources
 
-- [Playlist NextJS - Prawito Hudoro](https://www.youtube.com/playlist?list=PLU4DS8KR-LJ3-zouYHHknPq1G5VTB8PRf) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Playlist NextJS - Prawito Hudoro](https://www.youtube.com/playlist?list=PLU4DS8KR-LJ3-zouYHHknPq1G5VTB8PRf) - *Playlist* dari *channel* Pak Prawito ini membantu saya sebagai panduan dari mulai *setup project* sampai *deploy*.
 - [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 ## Author

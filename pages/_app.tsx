@@ -7,12 +7,13 @@ import type { AppProps } from 'next/app'
 const pubclicSans = Public_Sans({ subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
+  
   return <>
-      <style jsx global>{`
+    <style jsx global>{`
         html {
           font-family: ${pubclicSans.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
-    </>
+    <Component {...pageProps} />
+  </>
 }

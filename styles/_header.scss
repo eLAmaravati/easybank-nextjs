@@ -1,38 +1,37 @@
 .header {
-    overflow: hidden;
-    position: relative;
-    background: $lightGray url('/bg-desktop.webp') no-repeat top 0 right 0;
-    // background: $lightGray url('/bg-desktop.webp') no-repeat top -150px right -70px;
-    background-size: contain;
-    height: 600px;
+  overflow: hidden;
+  position: relative;
+  background: $lightGray url('/bg-desktop.webp') no-repeat top 0 right 0;
+  background-size: contain;
+  height: 600px;
 
-    &__title {
-        font-size: 2.7rem;
-    }
+  &__title {
+    font-size: 2.7rem;
+  }
 
-    &__wrapper {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-    &__image-container {
-        top: -70px;
-        right: -100px;
-        position: absolute;
-        z-index: 999;
-    }
+  &__image-container {
+    top: -70px;
+    right: -100px;
+    position: absolute;
+    z-index: 999;
+  }
 }
 
 // Navbar
 @mixin borderNav {
   content: '';
-      display: block;
-      border-bottom: 3px solid;
-      border-image-slice: 1;
-      border-width: 5px;
-      border-image-source: linear-gradient(to left, $brightCyan, $limeGreen);
-      margin: 10px auto 0;
+  display: block;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, $brightCyan, $limeGreen);
+  margin: 10px auto 0;
 }
 
 .nav-link {
@@ -45,25 +44,25 @@
   }
 
   &:hover {
-    color: #1c8236 ;
+    color: #1c8236;
 
     &::after {
-       @include borderNav;
+      @include borderNav;
     }
   }
 }
 
 
 @media screen and (max-width: 767.88px) {
-    .header {
-        &__wrapper {
-            top: 75%;
-            text-align: center;
-        }
+  .header {
+    &__wrapper {
+      top: 75%;
+      text-align: center;
     }
+  }
 
-    .ImageContainer {
-        top: -150px;
-        right: 0;
-    }
+  .ImageContainer {
+    top: -150px;
+    right: 0;
+  }
 }
