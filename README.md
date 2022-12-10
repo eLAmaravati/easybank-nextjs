@@ -1,34 +1,102 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Mentor - Easybank landing page solution
 
-## Getting Started
+![](public/desktop-preview.jpg)
 
-First, run the development server:
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-```bash
-npm run dev
-# or
-yarn dev
+- Solution URL: [Github Repository](https://github.com/eLAmaravati/easybank-nextjs)
+- Live Site URL: [Live site URL](https://easybank-nextjs-ochre.vercel.app/)
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [Issue & Approach](#issue--approach)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+
+## My process
+
+Sebetulnya, tantangan dari Frontend Mentor adalah membuat *landing page* menggunakan `HTML`, `CSS`, dan `JavaScript`. Tetapi, karena saya sedang mengasah JavaScript *framework*, jadi saya *slicing* menggunakan `NextJS`. 
+
+**Mulai:** 10 Desember 2022
+**Selesai:** 11 Desember 2022
+
+### Built with
+
+- [Next.js](https://nextjs.org/) - React framework
+- [React](https://reactjs.org/) - JS library
+- Semantic HTML5 markup
+- Bootstrap - for grid system
+- Saas - For styles
+- Flexbox
+
+### Issue & Approach
+
+Beberapa kendala yang saya hadapi dan pendekatan yang saya lakukan.
+
+#### 1. Header
+
+**Kendala**
+
+Tantangan terbesar adalah membuat *header* dengan `background-image` dan ada gambar yang *overlapping* di atasnya.
+
+Ini gambar *background* yang diberikan:
+
+![Desktop background](public/bg-intro-desktop.svg)
+
+### What I learned
+
+Ini pertama kalinya saya menggunakan `NextJS` untuk `real project`. 
+
+
+```css
+.header {
+  overflow: hidden;
+  position: relative;
+  background: $lightGray url('/bg-desktop.webp') no-repeat top 0 right 0;
+  background-size: contain;
+  height: 600px;
+}
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```js
+const proudOfThisFunc = () => {
+  console.log("🎉");
+};
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Continued development
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+### Useful resources
 
-To learn more about Next.js, take a look at the following resources:
+- [Playlist NextJS - Prawito Hudoro](https://www.youtube.com/playlist?list=PLU4DS8KR-LJ3-zouYHHknPq1G5VTB8PRf) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+- [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Website - [Langit Amaravati](https://www.langitamaravati.com)
+- Frontend Mentor - [@elamaravati](https://www.frontendmentor.io/profile/elamaravati)
+- Twitter - [@elamaravati](https://www.twitter.com/elamaravati)
 
-## Deploy on Vercel
+## Acknowledgments
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
