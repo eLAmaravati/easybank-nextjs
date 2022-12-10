@@ -7,8 +7,8 @@ import Layout from '../components/Layout';
 export default function Home() {
 	return (
 		<>
-		<Navbar />
-		<Header />
+			<Navbar />
+			<Header />
 			<Layout pageTitle='Frontend Mentor'>
 				{/* Feature Section */}
 				<section className="section section__feature">
@@ -37,7 +37,7 @@ export default function Home() {
 								<div className="card__feature--content">
 									<h3>Simple Budgeting</h3>
 									<p>
-										See exactly where your money goes each month. Receive notifications when you're
+										See exactly where your money goes each month. Receive notifications when you are
 										close to hitting your limits.
 									</p>
 								</div>
@@ -47,7 +47,7 @@ export default function Home() {
 								<div className="card__feature--content">
 									<h3>Fast Onboarding</h3>
 									<p>
-										We don't do branches. Open your account in minutes online and start taking control
+										We don&apos;t do branches. Open your account in minutes online and start taking control
 										of your finances right away.
 									</p>
 								</div>
@@ -79,14 +79,14 @@ export default function Home() {
 						<div className="row">
 							<article className="card__blog col-md-3">
 								<div className="card border-0">
-									<img src="/image-currency.webp" className="card-img-top"
-										alt="Receive money in any currency with no fees"/>
+									<Image src="/image-currency.webp" className="card-img-top"
+										alt="Receive money in any currency with no fees" width={258} height={215}/>
 									<div className="card__blog--content card-body">
 										<span className="card__blog--meta">By Claire Robinson</span>
 										<h3 className="card__blog--title">
 											<Link href='/blog' className='stretched-link'>Receive money in any currency with no fees</Link>
 										</h3>
-										<p>The world is getting smaller and we're becoming more mobile. So why should you be
+										<p>The world is getting smaller and we&apos;re becoming more mobile. So why should you be
 											forced to only receive money …</p>
 									</div>
 								</div>
@@ -94,8 +94,8 @@ export default function Home() {
 
 							<article className="card__blog col-md-3">
 								<div className="card border-0">
-									<img src="/image-restaurant.webp" className="card-img-top"
-										alt="Receive money in any currency with no fees" width="100%" />
+									<Image src="/image-restaurant.webp" className="card-img-top"
+										alt="Receive money in any currency with no fees" width={258} height={215} />
 									<div className="card__blog--content card-body">
 										<span className="card__blog--meta">By Wilson Hutton</span>
 										<h3 className="card__blog--title">
@@ -109,8 +109,8 @@ export default function Home() {
 
 							<article className="card__blog col-md-3">
 								<div className="card border-0">
-									<img src="/image-plane.webp" className="card-img-top"
-										alt="Take your Easybak Whereever You Go" width="100%" />
+									<Image src="/image-plane.webp" className="card-img-top"
+										alt="Take your Easybak Whereever You Go" width={258} height={215} />
 									<div className="card__blog--content card-body">
 										<span className="card__blog--meta">By Wilson Hutton</span>
 										<h3 className="card__blog--title">
@@ -124,15 +124,15 @@ export default function Home() {
 
 							<article className="card__blog col-md-3">
 								<div className="card border-0">
-									<img src="/image-confetti.webp" className="card-img-top"
-										alt="Our invite-only Beta accounts are now live!" />
+									<Image src="/image-confetti.webp" className="card-img-top"
+										alt="Our invite-only Beta accounts are now live!" width={258} height={215} />
 									<div className="card__blog--content card-body">
 										<span className="card__blog--meta">By Claire Robinson</span>
 										<h3 className="card__blog--title">
 											<Link href="/blog" className='stretched-link'>Our invite-only Beta accounts are now live!</Link>
 										</h3>
 										<p>Our invite-only Beta accounts are now live!
-											After a lot of hard work by the whole team, we're excited to launch our closed beta
+											After a lot of hard work by the whole team, we&apos;re excited to launch our closed beta
 											...</p>
 									</div>
 								</div>

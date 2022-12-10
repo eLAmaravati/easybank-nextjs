@@ -1,11 +1,12 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Footer() {
   return < footer className = 'footer' >
       <div className="container">
         <div className="row justify-content-center footer__widget">
           <div className="col-md-2">
-            <img src="/logo-white.svg" alt="Easybank logo" />
+            <Image src="/logo-white.svg" alt="Easybank logo" height={20} width={139}/>
 
             <ul className="list-inline footer__social mt-4">
               <li className="list-inline-item">
@@ -60,7 +61,7 @@ export default function Footer() {
         {/* Attribution */}
         <div className="attribution row pt-4">
           <div className="col-12">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
             Coded by <a href="https://www.langitamaravati.com">Langit Amaravati</a>.
           </div>
         </div>

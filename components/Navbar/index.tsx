@@ -1,11 +1,12 @@
 import Link from "next/link"
+import Image from "next/image";
 import { useRouter } from 'next/router';
 
 export default function Navbar() {
 	const router = useRouter();
 	return <nav className="navbar py-2 navbar-expand-lg bg-white">
 		<div className="container">
-			<Link href="/" className="navbar-brand"><img src="/logo.svg" alt="Easybank Logo" /></Link>
+			<Link href="/" className="navbar-brand"><Image src="/logo.svg" alt="Easybank Logo" height={20} width={139} /></Link>
 			<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span className="navbar-toggler-icon"></span>
 			</button>

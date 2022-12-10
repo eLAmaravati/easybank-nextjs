@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Header() {
 	return <header className="header">
 		<div className="container">
@@ -11,7 +13,7 @@ export default function Header() {
 					<button className="button button__cta rounded-pill">Request Invite</button>
 				</div>
 				<div className="col-md-6 offset-2 header__image-container">
-					<img src="/image-mockups.png" alt="" className='img-fluid'/>
+					<Image src="/image-mockups.png" alt="" className='img-fluid' width={581} height={712}/>
 				</div>
 			</div>
 		</div>

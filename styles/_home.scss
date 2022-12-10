@@ -58,5 +58,10 @@
         padding: 10px 0;
       }
     }
+
+    img {
+      object-fit: cover;
+      height: auto !important;
+    }
   }
 }
