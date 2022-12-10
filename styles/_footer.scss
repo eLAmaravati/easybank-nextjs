@@ -1,0 +1,42 @@
+// Footer
+.footer {
+  background-color: $darkBlue;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #9c9ead;
+
+  a {
+    color: $white;
+
+    &:hover {
+        color: $limeGreen;
+      }
+  }
+
+  &__widget {
+    font-size: 16px;
+  }
+
+  &__social {
+    a {
+      background-color: $white;
+      border-radius: 50%;
+      padding: 3px 5px;
+
+      i {
+        color: $darkBlue;
+
+        &:hover {
+          color: $limeGreen;
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid $grayBlue;
+  margin-top: 30px;
+}

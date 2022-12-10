@@ -1,0 +1,47 @@
+@media (prefers-color-scheme: dark) {
+    html {
+        color-scheme: dark;
+    }
+
+    body {
+        color: white;
+        background: black;
+    }
+}
+
+@media (max-width: 767.88px) {
+    .header {
+        &__wrapper {
+            top: 75%;
+            text-align: center;
+        }
+
+        &__image-container {
+            top: -150px;
+            right: 0;
+        }
+    }
+
+    .section {
+        &__feature {
+            top: 0;
+            text-align: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        &__blog {
+            margin-top: 0;
+        }
+
+        &__title {
+            text-align: center;
+        }
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
